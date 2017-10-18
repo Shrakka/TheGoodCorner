@@ -1,0 +1,182 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1fdf7;
+}
+
+a { 
+    all: unset;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px lightgray;
+    width: 100%;
+    height: 50px;
+    background-color: #66a6ae;
+    font-weight: bold; 
+    color: white;
+}
+
+.content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.home:hover {
+    color: #006d7c;
+}
+
+.create:hover {
+    color: #006d7c;
+}
+
+.welcome {
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #006d7c;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.announce-container {
+    margin: 20px;
+}
+
+.announce {
+    display: flex;
+    padding: 15px;
+    margin: 30px;
+    background-color: #c5f0c9;
+}
+
+.announce-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.annonce-description{
+    margin-top: 30px;
+}
+
+.announce-date {
+    color: gray;
+}
+
+.form {
+    background-color: #c5f0c9;
+    padding-bottom: 10px;
+}
+
+.fields {
+    margin: 10px;
+    padding: 5px;
+}
+
+.field {
+    margin: 10px;
+}
+
+.text-area {
+    width: 100%;
+}
+
+.create-title {
+    width: 100%;
+}
+
+.button {
+    width: 100px;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.delete-button {
+    font-size: 11px;
+    text-decoration: none;
+    background-color: rgb(167, 28, 28);
+    color: white;
+    padding: 2px 20px 2px 20px;
+    border: 1px solid #858585;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.detail {
+    background-color: #c5f0c9;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.detail-title {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.detail-description {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+}
+
+.seller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.detail-seller {
+    padding: 2 20 2 20;
+    background-color: #006d7c;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #c5f0c9;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    margin-top: 5px;
+
+}
+
+.seller-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+
+}

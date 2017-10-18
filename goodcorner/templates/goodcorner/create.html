@@ -1,0 +1,19 @@
+{% extends "goodcorner/header.html" %}
+{% block content %}
+
+<div class="welcome">Create an announce</div>
+
+<div class="form">
+    <form action="" method="post">{% csrf_token %}
+            <ul class="fields">
+                    <li id="subject" class="field">Announce title:<br/>{{ form.title }}</li>
+                    <li id="email" class="field">Announce description:<br/>{{ form.description }}</li>
+                    <li id="message" class="field">Your surname:<br/>{{ form.surname }}</li>
+                    <li id="message" class="field">Your email:<br/>{{ form.email }}</li>
+                </ul>
+        {% comment %} {{ form.as_p }} {% endcomment %}
+        <input class="button" type="submit" value="Create" />
+    </form>
+</div>
+
+{% endblock %}

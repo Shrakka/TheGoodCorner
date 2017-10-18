@@ -1,0 +1,23 @@
+{% load static %}
+
+<head>
+    {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/> {% endcomment %}
+    <link rel="stylesheet" type="text/css" href="{% static 'goodcorner/style.css' %}"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a class="brand" href="{% url 'goodcorner:home' %}">The Good Corner</a>
+        <a class="home" href="{% url 'goodcorner:home' %}">Home</a>
+        <a class="create" href="{% url 'goodcorner:create' %}">Create an announce</a>
+    </div>
+    
+    
+
+    <div class="content">
+        {% block content %}{% endblock%}
+    </div>
+    
+
+</body>

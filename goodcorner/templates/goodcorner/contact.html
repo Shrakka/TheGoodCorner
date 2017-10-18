@@ -1,0 +1,19 @@
+{% extends "goodcorner/header.html" %}
+{% block content %}
+
+<div class="welcome">Contact the seller</div>
+
+<div class="contact">
+    <div class="seller-title">{{announce.title}}</div>
+
+    <form action="{% url 'goodcorner:contact' announce.id %}" method="post">
+        {% csrf_token %}
+        Your email:<br/>
+        {{ form.email }}
+        <br/><br/>Your message:<br/>
+        {{ form.message }}
+        <div class="message"><input type="submit" value="Send message" /></div>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "goodcorner/header.html" %}
+{% block content %}
+
+<div class="welcome">Announce details</div>
+
+<div class="detail">
+    <p class="detail-title">{{ announce.title }}</p>
+    <p class="detail-description">{{announce.description}}</p>
+    <div class="seller"><a class="detail-seller" href="{% url 'goodcorner:contact' announce.id %}">Contact the seller</a></div>
+</div>
+
+{% endblock %}

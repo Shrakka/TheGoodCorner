@@ -1,0 +1,24 @@
+{% extends "goodcorner/header.html" %}
+{% block content %}
+
+<div class="welcome">Welcome to the Good Corner</div>
+
+{% if announce_list %}
+<ul class="announce-container">
+{% for announce in announce_list %}
+    <li class="announce">
+        <a href="{% url 'goodcorner:announce' announce.id %}">
+            <span class="announce-title">{{ announce.title }}</span>
+             <br/>
+             <span class="announce-description">{{ announce.description |truncatechars:170}}</span>
+             <br/>
+             <span class="announce-date">{{ announce.creation_date }}</span>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No announces available yet</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "goodcorner/header.html" %}
+{% block content %}
+
+<div class="welcome">Edit your announce</div>
+
+<div class="form">
+        <form action="" method="post">{% csrf_token %}
+                <ul class="fields">
+                        <li id="subject" class="field">New title:<br/>{{ form.title }}</li>
+                        <li id="email" class="field">New description:<br/>{{ form.description }}</li>
+                    </ul>
+            {% comment %} {{ form.as_p }} {% endcomment %}
+            <div class="delete"><input class="button" type="submit" value="Edit" /> <a class="delete-button" href="{% url 'goodcorner:delete' announce.hashurl %}">Delete your announce</a></div>
+        </form>
+</div>
+{% endblock %}
