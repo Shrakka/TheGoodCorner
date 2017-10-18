@@ -8,7 +8,7 @@ Craiglist-like app using Django &amp; SQlite
 
 ## Run
 
-- cd projectttn
+- cd TheGoodCorner
 - python manage.py runserver
 - served on localhost://8000
 
